@@ -1,0 +1,27 @@
+/*
+Copyright 2022 admfgonzalez
+*/
+
+#pragma once
+
+#ifdef RGBLIGHT_ENABLE
+    #undef RGBLED_NUM
+    #undef RGBLED_SPLIT
+    #define RGBLIGHT_SLEEP
+
+    #define RGBLED_NUM 11
+
+    // #define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+
+    // #define RGBLIGHT_ANIMATIONS
+    // #define RGBLIGHT_EFFECT_ALTERNATING
+    #define RGBLIGHT_EFFECT_BREATHING
+    // #define RGBLIGHT_EFFECT_CHRISTMAS
+    // #define RGBLIGHT_EFFECT_KNIGHT
+    #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+    // #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+    // #define RGBLIGHT_EFFECT_SNAKE
+    #define RGBLIGHT_EFFECT_STATIC_GRADIENT
+    #define RGBLIGHT_EFFECT_TWINKLE
+	// #define RGBLIGHT_EFFECT_RGB_TEST
+#endif
